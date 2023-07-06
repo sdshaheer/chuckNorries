@@ -1,5 +1,4 @@
 import React from 'react';
-import Chuck from './components/Chuck';
 import classes from './chuck.module.css';
 import { capitalize } from './functions';
 const Chuck = ({ categories, generateRandomJoke }) => {
