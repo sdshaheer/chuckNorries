@@ -5,8 +5,9 @@ import { useState, useEffect } from 'react';
 import Modal from './modals/Modal';
 
 export default function App() {
-  const [isopen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const [categories, setCategories] = useState([]);
+  const [currCategory, setCurrCategory] = useState('');
   const [joke, setJoke] = useState('');
 
   const changeIsOpen = () => {
@@ -17,17 +18,17 @@ export default function App() {
     const res = await fetch('https://api.chucknorris.io/jokes/categories');
     const data = await res.json();
     setCategories(data);
-    setJoke(data.value);
-    setIsOpen(true);
   };
 
   const generateRandomJoke = async (category) => {
     const res = await fetch(
-      `https://api.chucknorris.io/jokes/random?category=animal`
+      `https://api.chucknorris.io/jokes/random?category=${category}`
     );
     const data = await res.json();
-    console.log(data);
-    console.log('.........');
+    console.log(data.value);
+    setJoke(data.value);
+    setCurrCategory(category);
+    setIsOpen(true);
   };
 
   useEffect(() => {
@@ -39,9 +40,14 @@ export default function App() {
   return (
     <div>
       <Chuck categories={categories} generateRandomJoke={generateRandomJoke} />
-      <Modal open={isopen} changeIsOpen={changeIsOpen}>
-        <h1>hello</h1>
-      </Modal>
+      {isOpen && (
+        <Modal
+          currCategory={currCategory}
+          generateRandomJoke={generateRandomJoke}
+          changeIsOpen={changeIsOpen}
+          data={joke}
+        />
+      )}
     </div>
   );
 }

@@ -40,6 +40,9 @@
   margin-right: 45%;
 }
 
+.reactIcon {
+  cursor: pointer;
+}
 .content {
   margin-top: 5%;
   padding: 5%;
