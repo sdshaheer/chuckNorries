@@ -1,0 +1,15 @@
+.container {
+  background-color: blue;
+}
+.category {
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: white;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.categoryText {
+  color: rgb(255, 0, 242);
+}
