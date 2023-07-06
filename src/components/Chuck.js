@@ -2,7 +2,7 @@ import React from 'react';
 import Chuck from './components/Chuck';
 import { useState, useEffect } from 'react';
 import classes from './chuck.module.css';
-
+import { capitalize } from './functions';
 const Chuck = () => {
   const [categories, setCategories] = useState([]);
 
@@ -24,9 +24,11 @@ const Chuck = () => {
         {categories.map((category, index) => {
           return (
             <div className={classes.category} key={index}>
-              <span className={classes.categoryText}>{category}</span>
+              <span className={classes.categoryText}>
+                {capitalize(category)}
+              </span>
               <span className={classes.categoryDescription}>
-                Unlimited Jokes On {category}
+                Unlimited Jokes On {capitalize(category)}
               </span>
             </div>
           );
