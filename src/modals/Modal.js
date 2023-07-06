@@ -26,7 +26,7 @@ const Modal = ({ currCategory, generateRandomJoke, changeIsOpen, data }) => {
             />
           </div>
           <div className={classes.content}>
-            <span className={classes.children}>{data}</span>
+            <span className={classes.children}>" {data} "</span>
             <button onClick={getNextJoke}>Next</button>
           </div>
         </div>

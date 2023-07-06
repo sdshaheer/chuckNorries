@@ -48,10 +48,11 @@
   cursor: pointer;
 }
 .content {
-  margin-top: 2%;
+  margin:2%;
   padding: 2%;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   border: solid 1px black;
 }
 

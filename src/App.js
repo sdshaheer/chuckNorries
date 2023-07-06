@@ -25,7 +25,6 @@ export default function App() {
       `https://api.chucknorris.io/jokes/random?category=${category}`
     );
     const data = await res.json();
-    console.log(data.value);
     setJoke(data.value);
     setCurrCategory(category);
     setIsOpen(true);
@@ -34,8 +33,6 @@ export default function App() {
   useEffect(() => {
     fetchCategories();
   }, []);
-
-  console.log(categories);
 
   return (
     <div>
