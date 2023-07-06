@@ -20,13 +20,15 @@ const Chuck = () => {
   return (
     <div className={classes.container}>
       <h1 className={classes.heading}>Chuck Norries</h1>
-      {categories.map((category, index) => {
-        return (
-          <div className={classes.category} key={index}>
-            <span className={classes.categoryText}>{category}</span>
-          </div>
-        );
-      })}
+      <div className={classes.grid}>
+        {categories.map((category, index) => {
+          return (
+            <div className={classes.category} key={index}>
+              <span className={classes.categoryText}>{category}</span>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

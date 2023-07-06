@@ -3,7 +3,12 @@
 }
 
 .heading {
-  color: green;
+  color: rgba(13, 235, 13, 0.952);
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 5px;
 }
 .category {
   border-radius: 10px;
@@ -15,5 +20,6 @@
 }
 
 .categoryText {
+  font-size: larger;
   color: rgb(111, 0, 255);
 }
