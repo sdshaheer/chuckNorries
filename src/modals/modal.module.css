@@ -2,14 +2,15 @@
   position: absolute;
   border: solid 1px black;
   float: left;
-  top: 50%;
-  left: 50%;
+  top: 30%;
+  left: 30%;
   transform: 'translate(-50%,-50%)';
   background-color: white;
   padding: 5px;
   border-radius: 5px;
   z-index: 1000;
-  width: 200px;
+  width: 40%;
+  height: 30%;
 }
 
 .overlay {
@@ -36,16 +37,15 @@
 
 .title {
   text-align: start;
-  margin-right: 75px;
+  margin-right: 45%;
 }
 
 .content {
-  margin-top: 5px;
-  padding: 5px;
+  margin-top: 5%;
+  padding: 5%;
   display: flex;
   flex-direction: column;
-  border: solid 1px black;
-  padding: 10;
+  border: solid 2px rgb(126, 34, 34);
 }
 
 .children {
@@ -54,5 +54,5 @@
 
 button {
   width: 50px;
-  margin-left: 70px;
+  margin-left: 45%;
 }
