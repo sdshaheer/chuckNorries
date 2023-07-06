@@ -17,7 +17,7 @@ const Modal = ({ open, changeIsOpen, children }) => {
         <div className={classes.modal}>
           <div className={classes.icon}>
             <span className={classes.title}>Tiltle</span>
-            <RxCross2 className={classes.reactIcon} />
+            <RxCross2 className={classes.reactIcon} onClick={handleModal} />
           </div>
           <div className={classes.content}>
             <span className={classes.children}>{children}</span>

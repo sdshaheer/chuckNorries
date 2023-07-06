@@ -7,23 +7,24 @@ import Modal from './modals/Modal';
 export default function App() {
   const [isopen, setIsOpen] = useState(false);
   const [categories, setCategories] = useState([]);
+  const [joke, setJoke] = useState('');
 
   const changeIsOpen = () => {
-    setIsOpen((prev) => !prev);
+    setIsOpen(false);
   };
 
   const fetchCategories = async () => {
     const res = await fetch('https://api.chucknorris.io/jokes/categories');
     const data = await res.json();
     setCategories(data);
+    setJoke(data.value);
+    setIsOpen(true);
   };
 
   const generateRandomJoke = async (category) => {
-    console.log('hello' + ' ' + category);
     const res = await fetch(
       `https://api.chucknorris.io/jokes/random?category=animal`
     );
-    console.log('json');
     const data = await res.json();
     console.log(data);
     console.log('.........');
