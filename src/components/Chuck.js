@@ -19,7 +19,7 @@ const Chuck = () => {
   console.log(categories);
   return (
     <div className={classes.container}>
-      <h1>Chuck Norries</h1>
+      <h1 className={classes.heading}>Chuck Norries</h1>
       {categories.map((category, index) => {
         return (
           <div className={classes.category} key={index}>

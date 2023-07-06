@@ -1,5 +1,9 @@
 .container {
-  background-color: blue;
+  text-align: center;
+}
+
+.heading {
+  color: green;
 }
 .category {
   border-radius: 10px;
@@ -11,5 +15,5 @@
 }
 
 .categoryText {
-  color: rgb(255, 0, 242);
+  color: rgb(111, 0, 255);
 }
