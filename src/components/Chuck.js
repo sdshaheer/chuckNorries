@@ -25,6 +25,9 @@ const Chuck = () => {
           return (
             <div className={classes.category} key={index}>
               <span className={classes.categoryText}>{category}</span>
+              <span className={classes.categoryDescription}>
+                Unlimited Jokes On {category}
+              </span>
             </div>
           );
         })}

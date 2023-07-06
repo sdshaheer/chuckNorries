@@ -12,6 +12,8 @@
 }
 
 .category {
+  display: flex;
+  flex-direction: column;
   border-radius: 10px;
   font-size: 20px;
   background-color: white;
@@ -23,4 +25,10 @@
 .categoryText {
   font-size: larger;
   color: rgb(111, 0, 255);
+}
+
+.categoryDescription {
+  font-size: 10px;
+  padding: 10px;
+  color: palevioletred;
 }
