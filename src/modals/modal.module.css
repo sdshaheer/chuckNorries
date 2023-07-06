@@ -11,6 +11,7 @@
   z-index: 1000;
   width: 40%;
   height: 200px;
+  background-color: darkslategrey;
 }
 
 .overlay {
@@ -38,6 +39,8 @@
 .title {
   text-align: start;
   margin-right: 45%;
+  color: white;
+  font-weight: bold;
 }
 
 .reactIcon {
@@ -48,13 +51,18 @@
   padding: 5%;
   display: flex;
   flex-direction: column;
+  border: solid 1px black;
 }
 
 .children {
   padding: 10px;
+  color: white;
 }
 
 button {
   width: 50px;
   margin-left: 45%;
+  background-color: blue;
+  border-radius: 2px;
+  color: black;
 }
