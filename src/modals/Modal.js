@@ -19,7 +19,11 @@ const Modal = ({ currCategory, generateRandomJoke, changeIsOpen, data }) => {
         <div className={classes.modal}>
           <div className={classes.icon}>
             <span className={classes.title}>{capitalize(currCategory)}</span>
-            <RxCross2 className={classes.reactIcon} onClick={handleModal} />
+            <RxCross2
+              style={{ color: 'white' }}
+              className={classes.reactIcon}
+              onClick={handleModal}
+            />
           </div>
           <div className={classes.content}>
             <span className={classes.children}>{data}</span>

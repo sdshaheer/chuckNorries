@@ -5,9 +5,8 @@
   top: 30%;
   left: 30%;
   transform: 'translate(-50%,-50%)';
-  background-color: white;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 10px;
   z-index: 1000;
   width: 40%;
   height: 200px;
@@ -37,9 +36,11 @@
 }
 
 .title {
+  padding-top: 2px;
   text-align: start;
   margin-right: 45%;
   color: white;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -47,22 +48,26 @@
   cursor: pointer;
 }
 .content {
-  margin-top: 5%;
-  padding: 5%;
+  margin-top: 2%;
+  padding: 2%;
   display: flex;
   flex-direction: column;
   border: solid 1px black;
 }
 
 .children {
+  display: flex;
+  justify-content: center;
   padding: 10px;
   color: white;
 }
 
 button {
-  width: 50px;
+  width: 70px;
+  height: 30px;
   margin-left: 45%;
   background-color: blue;
-  border-radius: 2px;
+  border-radius: 8px;
   color: black;
+  cursor: pointer;
 }
